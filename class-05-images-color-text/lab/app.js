@@ -92,13 +92,20 @@ new branch for your work on the next question!
 
 */
 
-// Write your code here
+// Write your code heree
+
+// function sumAndMultiply(a,b,c){ //eslint  
+//     const sumComplete = sum(sum(a,b), c);
+//     const prodComplete = multiply(multiply(a, b), c);
+//     return [sumComplete, prodComplete, a + ' and '  + b + ' and ' + c + ' sum to ' + sumComplete + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodComplete + '.'];
+// }
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+    const sumAll = sum(sum(a, b)[0], c)[0];
+    const prodAll = multiply(multiply(a, b)[0], c)[0];
+    return [sumAll, prodAll, a + ' and '  + b + ' and ' + c + ' sum to ' + sumAll + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodAll + '.'];
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
