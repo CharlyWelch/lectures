@@ -133,22 +133,6 @@ new branch for your work on the next question!
 
 // Write your code here
 
-// function sumArray(testArray){ //eslint-disable-line
-//     for(let i = 0 ; i < (testArray.length) ; i ++);{
-//         const posOne = testArray[i];
-//         const posTwo = testArray[ i + 2 ];
-//         const arraySum = sum(posOne, posTwo)[0];
-//     }
-//     return [testArray + 'was passed in as an array of numbers, and ' + arraySum + ' is their sum.'];
-// }
-
-// function sumArray(testArray){ //eslint-disable-line
-//     const arraySum = testArray.reduce(sum( ), 0);
-//     return [testArray + 'was passed in as an array of numbers, and ' + arraySum + ' is their sum.'];
-// }
-
-
-
 function sumArray(testArray){ //eslint-disable-line
     let total = 0;
     for(let i = 0 ; i < testArray.length ; i ++){
@@ -187,8 +171,12 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+    let total = 1;
+    for(let i = 0 ; i < testArray.length ; i ++){
+        total = multiply(total, testArray[i])[0];
+    }
+    return[total, 'The numbers ' + testArray + ' have a product of ' + total + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+testMultiplyArray();
